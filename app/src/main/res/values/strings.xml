@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DataBinding</string>
+    <string-array name="main_activity_button_names">
+        <item>demo1</item>
+        <item>demo2</item>
+    </string-array>
 </resources>
