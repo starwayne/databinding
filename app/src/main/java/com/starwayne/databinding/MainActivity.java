@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onDemo2Click(View view){
-
+        Intent intent = new Intent();
+        intent.setClassName("com.starwayne.databinding" , "com.starwayne.databinding.ActivityDemo2");
+        startActivity(intent);
     }
 }
