@@ -4,17 +4,17 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.starwayne.databinding.databinding.ActivityDemo2Binding;
+import com.starwayne.databinding.databinding.ActivityBasicDataBindingBinding;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class ActivityDemo2 extends AppCompatActivity {
+public class BasicDataBindingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        ActivityDemo2Binding binding = DataBindingUtil.setContentView(this, R.layout.activity_demo_2);
+        ActivityBasicDataBindingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_basic_data_binding);
         binding.setNum(999);
         binding.setStr("Str");
 

@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityDemo1">
+        <activity android:name=".HelloDataBindingActivity">
         </activity>
-        <activity android:name=".ActivityDemo2">
+        <activity android:name=".BasicDataBindingActivity">
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

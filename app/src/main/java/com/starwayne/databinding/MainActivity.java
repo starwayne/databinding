@@ -16,18 +16,34 @@ public class MainActivity extends AppCompatActivity {
         ActivityMainBinding bindings = DataBindingUtil.setContentView(this, R.layout.activity_main);
         String[] nameArray = getResources().getStringArray(R.array.main_activity_button_names);
         bindings.setButtonNameArray(nameArray);
+        bindings.setHandlers(new EventHandlers());
 
     }
 
-    public void onDemo1Click(View view){
-        Intent intent = new Intent();
-        intent.setClassName("com.starwayne.databinding" , "com.starwayne.databinding.ActivityDemo1");
-        startActivity(intent);
+    public void onHelloDataBindingClick(View view){
+
     }
 
-    public void onDemo2Click(View view){
-        Intent intent = new Intent();
-        intent.setClassName("com.starwayne.databinding" , "com.starwayne.databinding.ActivityDemo2");
-        startActivity(intent);
+    public void onBasicDataBindingClick(View view){
+
+
+
+    }
+
+    public class EventHandlers{
+        public void handleClick(View view) {
+            int viewId = view.getId();
+            Intent intent = new Intent();
+            if(viewId == R.id.hello_data_binding_id){
+                intent.setClassName("com.starwayne.databinding" , "com.starwayne.databinding.HelloDataBindingActivity");
+            } else if(viewId == R.id.basic_data_binding_id){
+                intent.setClassName("com.starwayne.databinding" , "com.starwayne.databinding.BasicDataBindingActivity");
+            } else {
+                intent = null;
+            }
+            if(intent != null){
+                startActivity(intent);
+            }
+        }
     }
 }
