@@ -1,8 +1,5 @@
 package com.starwayne.databinding.bean;
 
-/**
- * Created by mac on 18/4/25.
- */
 
 public class Person {
     private String name;

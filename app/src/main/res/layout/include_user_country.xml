@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="user"
+            type="com.starwayne.databinding.bean.User"/>
+        <variable
+            name="presenter"
+            type="com.starwayne.databinding.ExpressionDataBindingActivity.Presenter"/>
+    </data>
+
+    <FrameLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="input country name"
+            android:onTextChanged="@{presenter::onTextChanged}"/>
+    </FrameLayout>
+</layout>

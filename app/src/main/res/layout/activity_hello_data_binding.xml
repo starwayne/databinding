@@ -6,7 +6,6 @@
     >
 
     <data>
-
         <variable
             name="person"
             type="com.starwayne.databinding.bean.Person"
