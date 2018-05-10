@@ -35,10 +35,13 @@ public class MainActivity extends AppCompatActivity {
             int viewId = view.getId();
             Intent intent = new Intent();
             if(viewId == R.id.hello_data_binding_id){
-                intent.setClassName("com.starwayne.databinding" , "com.starwayne.databinding.HelloDataBindingActivity");
+                intent.setClass(MainActivity.this, HelloDataBindingActivity.class);
             } else if(viewId == R.id.basic_data_binding_id){
-                intent.setClassName("com.starwayne.databinding" , "com.starwayne.databinding.BasicDataBindingActivity");
-            } else {
+                intent.setClass(MainActivity.this, BasicDataBindingActivity.class);
+            } else if(viewId == R.id.expression_data_binding_id){
+                intent.setClass(MainActivity.this, ExpressionDataBindingActivity.class);
+            }
+            else {
                 intent = null;
             }
             if(intent != null){

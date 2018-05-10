@@ -9,7 +9,8 @@ public class User {
     private String lastName;
     private String country;
     private URL avatarUrl;
-    private boolean isHidden;
+    private boolean hidden;
+    private boolean vip;
 
 
     public User() {
@@ -66,11 +67,19 @@ public class User {
         this.avatarUrl = avatarUrl;
     }
 
-    public boolean isHidden() {
-        return isHidden;
+    public boolean getHidden() {
+        return hidden;
     }
 
     public void setHidden(boolean hidden) {
-        isHidden = hidden;
+        this.hidden = hidden;
+    }
+
+    public boolean getVip() {
+        return vip;
+    }
+
+    public void setVip(boolean VIP) {
+        vip = VIP;
     }
 }

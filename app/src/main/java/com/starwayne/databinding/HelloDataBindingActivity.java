@@ -14,8 +14,9 @@ public class HelloDataBindingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActivityHelloDataBindingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_hello_data_binding);
-        Person person = new Person("xiaoming", "36", "China");
-        binding.setPerson(person);
+        Person person = new Person("wangxin", "36", "China");
+        //binding.setPerson(person);
+        binding.setVariable(BR.person, person);
         binding.textView1.setVisibility(View.VISIBLE);
     }
 }

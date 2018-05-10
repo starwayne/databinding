@@ -5,6 +5,7 @@
 >
    <data>
         <import type="android.view.View"/>
+        <import type="com.starwayne.databinding.MyUtils"/>
         <variable
             name="user"
             type="com.starwayne.databinding.bean.User"/>
@@ -23,8 +24,9 @@
             android:id="@+id/avatar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="@{user.isHidden ? View.INVISIBLE : View.VISIBLE}"
-            android:src="@{@drawable/default_avatar}"/>
+            android:visibility="@{user.hidden ? View.INVISIBLE : View.VISIBLE}"
+            android:src="@{@drawable/default_avatar}"
+            />
 
         <EditText
             android:layout_width="wrap_content"
@@ -48,7 +50,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="@{avatar.visibility}"
-            android:text="@{user.displayName ?? user.lastName}"
+            android:text="@{MyUtils.capitalizeFirstLetter(user.displayName ?? user.lastName)}"
+            android:textSize="@{user.vip ? ((int) (@dimen/size_primary + 16) ) : (int) @dimen/size_secondary}"
             />
 
         <include layout="@layout/include_user_country" bind:user="@{user}"/>-->

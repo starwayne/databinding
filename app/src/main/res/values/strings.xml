@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">DataBinding</string>
     <string-array name="main_activity_button_names">
-        <item>Hello data binding</item>
-        <item>Basic data binding</item>
+        <item>Hello</item>
+        <item>Basic</item>
+        <item>Expression</item>
     </string-array>
 </resources>

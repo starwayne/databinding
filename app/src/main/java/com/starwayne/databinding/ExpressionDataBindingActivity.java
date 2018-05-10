@@ -20,8 +20,9 @@ public class ExpressionDataBindingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         User user = new User("Xin", "Wang");
         user.setHidden(mRandom.nextBoolean());
+        user.setVip(mRandom.nextBoolean());
         ActivityExpressionDataBindingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_expression_data_binding);
-
+        binding.setUser(user);
     }
 
     public class Presenter{
