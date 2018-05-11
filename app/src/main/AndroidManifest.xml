@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".ExpressionDataBindingActivity">
         </activity>
+        <activity android:name=".ObservableDataBindingActivity">
+        </activity>
     </application>
 
 </manifest>

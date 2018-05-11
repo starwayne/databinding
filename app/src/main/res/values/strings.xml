@@ -4,5 +4,6 @@
         <item>Hello</item>
         <item>Basic</item>
         <item>Expression</item>
+        <item>Observable</item>
     </string-array>
 </resources>
