@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">DataBinding</string>
+    <string name="add_item">Add</string>
+    <string name="remove_item">remove</string>
     <string-array name="main_activity_button_names">
         <item>Hello</item>
         <item>Basic</item>
         <item>Expression</item>
         <item>Observable</item>
+        <item>List</item>
     </string-array>
 </resources>

@@ -23,6 +23,7 @@ public class ExpressionDataBindingActivity extends AppCompatActivity {
         user.setVip(mRandom.nextBoolean());
         ActivityExpressionDataBindingBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_expression_data_binding);
         binding.setUser(user);
+        binding.setPresenter(new Presenter());
     }
 
     public class Presenter{

@@ -3,7 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     >
-
     <data>
         <import type="com.starwayne.databinding.MainActivity.EventHandlers" />
         <variable
@@ -19,13 +18,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:context="com.starwayne.databinding.MainActivity">
-
         <Button
             android:id="@+id/hello_data_binding_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
             android:onClick="@{handlers.handleClick}"
             android:text="@{buttonNameArray[0]}"/>
 
@@ -34,29 +31,33 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
             android:onClick="@{handlers.handleClick}"
             android:text="@{buttonNameArray[1]}"/>
 
-        <Button
-            android:id="@+id/observable_data_binding_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
-            android:clickable="true"
-            android:onClick="@{handlers.handleClick}"
-            android:text="@{buttonNameArray[3]}"/>
 
         <Button
             android:id="@+id/expression_data_binding_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="16dp"
             android:onClick="@{handlers.handleClick}"
             android:text="@{buttonNameArray[2]}"/>
 
+        <Button
+            android:id="@+id/observable_data_binding_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="@{handlers.handleClick}"
+            android:text="@{buttonNameArray[3]}"/>
+
+        <Button
+            android:id="@+id/list_data_binding_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="@{handlers.handleClick}"
+            android:text="@{buttonNameArray[4]}"/>
 
     </LinearLayout>
 </layout>

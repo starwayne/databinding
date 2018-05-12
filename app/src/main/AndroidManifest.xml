@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".ObservableDataBindingActivity">
         </activity>
+        <activity android:name=".ListDataBindingActivity">
+        </activity>
     </application>
 
 </manifest>

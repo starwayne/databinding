@@ -1,5 +1,6 @@
 package com.starwayne.databinding;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -21,15 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onHelloDataBindingClick(View view){
-
-    }
-
-    public void onBasicDataBindingClick(View view){
-
-
-
-    }
 
     public class EventHandlers{
         public void handleClick(View view) {
@@ -41,8 +33,10 @@ public class MainActivity extends AppCompatActivity {
                 intent.setClass(MainActivity.this, BasicDataBindingActivity.class);
             } else if(viewId == R.id.expression_data_binding_id){
                 intent.setClass(MainActivity.this, ExpressionDataBindingActivity.class);
-            }else if(viewId == R.id.observable_data_binding_id){
+            } else if(viewId == R.id.observable_data_binding_id){
                 intent.setClass(MainActivity.this, ObservableDataBindingActivity.class);
+            } else if(viewId == R.id.list_data_binding_id){
+                intent.setClass(MainActivity.this, ListDataBindingActivity.class);
             } else {
                 intent = null;
             }
